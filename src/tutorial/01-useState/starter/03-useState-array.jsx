@@ -1,8 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import { data } from '../../../data';
 
 const UseStateArray = () => {
-  const [people,setPeople] = React.useState(data);
+  const [people,setPeople] = useState(data);
 
   const removeItem = (id) => {
     const newPeople = people.filter((person)  => person.id !== id);
